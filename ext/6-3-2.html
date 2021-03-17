@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 
 <head>
     <title>6-2-1.html</title>
@@ -7,10 +7,57 @@
 
         let myStr = "Tang Poem: 年年歲歲花相似，歲歲年年人不同。";
 
+
         console.log(myStr.substr(13, 5));
         console.log(myStr.substring(13, 15));
         console.log(myStr.indexOf('年'));
         console.log(myStr.replace('年年', '月月'));
+
+        console.log(myStr.replace(/年年/g, '月月'));
+        // 這樣才重複的文字才可全部取代
+
+
+        console.log(myStr.toLocaleUpperCase());
+        // 變大寫
+
+        console.log(myStr.toLocaleLowerCase());
+        // 變小寫
+
+        console.log(myStr.slice(13, 15));
+        // 歲歲
+
+        console.log(myStr.split(':'));
+        //  ["Tang Poem", " 年年歲歲花相似，歲歲年年人不同。"]
+
+        console.log(myStr.sub());
+
+        console.log(myStr.sup());
+
+        document.write(myStr.sup() + "<br>");
+        document.write(myStr.sub() + "<br>");
+        document.write(myStr.fontcolor("salmon") + "<br>");
+        document.write(myStr.toLowerCase() + "<br>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
