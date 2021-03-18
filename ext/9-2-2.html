@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>practice</title>
+    <script>
+
+        let cat = {
+            legs: 4,
+            name: 'Darren',
+            color: 'Tangerine',
+            ability: {
+                jump: function () {
+                    console.log('Jump!');
+                },
+                sound: function () {
+                    console.log('Meow~');
+                },
+                sleep: function () {
+                    console.log('ZZZzzz...');
+                }
+            }
+        };
+
+        cat['eye_color'] = "black";
+        cat.habbit = "play with slave";
+
+
+        console.dir(cat, { depth: null });
+        // 印出詳細的全貌
+
+
+        console.log(cat["habbit"]);
+        cat['ability'].jump();
+
+
+
+
+
+
+
+        let i = 0;
+        console.log(i++);
+        // 0
+        console.log(i);
+        // 1
+
+
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>

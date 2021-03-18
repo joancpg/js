@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>practice</title>
+    <script>
+        let obj = {
+            fname: 'Darren',
+            lname: 'Yang',
+            age: null,
+            lineId: 'telunyang'
+        };
+
+        for (let attr in obj) {
+            console.log(`the property in object is ${attr}`);
+        };
+
+        for (let attr in obj) {
+            console.log(obj[attr])
+        };
+
+
+
+
+        console.log(obj[`fname`]);
+
+        // 這邊of 找不到順序
+
+
+        let arr = ["a", "b", "c"];
+        for (let key in arr) {
+            console.log(`The index number in array variable is ${key}`);
+        }
+
+        for (let value of arr) {
+            console.log(`The index number in array variable is ${value}`)
+        }
+
+
+        // of 是陣列才抓得道先後
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>

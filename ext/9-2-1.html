@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>practice</title>
+    <script>
+
+        let cat = {
+            legs: 4,
+            name: 'Darren',
+            color: 'Tangerine',
+            ability: {
+                jump: function () {
+                    console.log('Jump!');
+                },
+                sound: function () {
+                    console.log('Meow~');
+                },
+                sleep: function () {
+                    console.log('ZZZzzz...');
+                }
+            }
+        };
+
+        for (let attr in cat) {
+            console.log(cat[attr])
+        };
+
+        // 個別印出值
+
+        console.dir(cat, { depth: null });
+
+        // 印出詳細的全貌
+
+
+
+
+
+
+
+        console.log(cat["legs"]);
+        cat['ability'].sleep();
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>

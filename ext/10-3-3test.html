@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>practice</title>
+    <script>
+
+        // 問題  如何讓它呈現 "  a,b,c,d  "的樣子
+        let arr = ['a', 'b', 'c', 'd'];
+        let str = '';
+
+        for (let i = 0; i < arr.length; i++) {
+            if (str == '') {
+                str = arr[i];
+            }
+            else {
+                str += ',' + arr[i];
+            }
+        }
+
+        console.log(str)
+
+
+
+        // str += ',' + arr[i];
+        // 就是str=str+","+arr[i];
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
