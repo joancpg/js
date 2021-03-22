@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>practice</title>
+    <script>
+        let str = `{
+        "firstName": "Darren",
+        "lastName": "Yang",
+        "gender": "male",
+        "age": 18,
+        "address": {
+            "streetAddress": "台北市復興南路一段390號2樓、3樓",
+            "city": "Taipei"
+        },
+        "phoneNumber": [
+            {
+                "type": "office",
+                "number": "6631-6666"
+            },
+            {
+                "type": "fax",
+                "number": "6631-6598"
+            }
+        ]
+    }`;
+
+        //將jASON 字串 轉成物件 (非常重要)
+        let obj = JSON.parse(str);
+
+        console.log(obj['firstName']);
+        console.log(obj['address']['city']);
+
+
+        for (let qq of obj['phoneNumber']) {
+            console.log('===========');
+            console.log(qq['type']);
+            console.log(qq['number']);
+
+        }
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>

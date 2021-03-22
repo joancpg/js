@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>practice</title>
+
+
+</head>
+
+<body>
+
+    <button onclick="startCount()" id="btn_start">開始累加</button>
+    <input type="text" id="txt" value="">
+    <button onclick="stopCount()" id="btn_end">結束累加</button>
+
+
+    <script>
+        //累加數字的變數
+        var countNum = 0;
+
+        //作為 clearTimeout() 用的變數
+        var t;
+
+
+
+        function count() {
+
+            document.getElementById("txt").value = countNum;
+            countNum = countNum + 1;
+
+
+        }
+
+
+        function startCount() {
+            //週期性在指定毫秒後，進行累加
+            t = setInterval(function () { count() }, 1000);
+
+            //將開始按鈕設定為不可用
+            document.getElementById("btn_start").setAttribute("disabled", true);
+
+            //將結束鈕按移除不可用的屬性
+            document.getElementById("btn_end").removeAttribute("disabled");
+        }
+
+
+
+        function stopCount() {
+            //結束 setInterval
+            clearInterval(t);
+
+            //將開始鈕按移除不可用的屬性
+            document.getElementById("btn_start").removeAttribute("disabled");
+
+            //將結束按鈕設定為不可用
+            document.getElementById("btn_end").setAttribute("disabled", true);
+        }
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

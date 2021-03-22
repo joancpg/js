@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>practice</title>
+    <script>
+        let arrMeal = ['麥當勞', '肯德基', '摩斯漢堡', '頂呱呱', '漢堡王'];
+        let idxRandom = Math.floor(Math.random() * arrMeal.length);
+        document.write(`我可以選擇的餐廳有: <br />`);
+
+        for (let i = 0; i < arrMeal.length; i++) {
+            document.write('● ' + arrMeal[i] + '<br />');
+        }
+
+        document.write(`今天中餐，我選擇 ${arrMeal[idxRandom]}`);
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>practice</title>
+    <script>
+        let objPerson = {
+            name: "Bill",
+            age: 25,
+            hairColor: 'black',
+            skinColor: 'beige'
+        };
+
+        // 新增屬性
+        objPerson.hadShoes = true;
+        objPerson.isWoken = true;
+
+        //修改屬性
+        objPerson.age = 15;
+
+        //刪除屬性
+        delete objPerson.skinColor;
+
+        //將物件轉成 JSON
+        let strJson = JSON.stringify(objPerson);
+
+
+        console.log(strJson);
+
+
+
+        // let obj = JSON.parse(str);
+
+        let objPersonn = {
+            "name": "Bill",
+            "age": 25,
+            "hairColor": 'black',
+            "skinColor": 'beige'
+        };
+
+        objPersonn.hadShoes = true;
+        objPersonn.isWoken = true;
+
+        //修改屬性
+        objPerson.age = 15;
+
+        //刪除屬性
+        delete objPersonn.skinColor;
+
+        //將物件轉成 JSON
+        let strJsonn = JSON.stringify(objPerson);
+
+
+        console.log(strJson);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
