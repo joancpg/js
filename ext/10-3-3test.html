@@ -7,6 +7,9 @@
 
         // 問題  如何讓它呈現 "  a,b,c,d  "的樣子
         let arr = ['a', 'b', 'c', 'd'];
+        console.log(arr);
+
+
         let str = '';
 
         for (let i = 0; i < arr.length; i++) {
@@ -18,12 +21,18 @@
             }
         }
 
+
         console.log(str)
 
 
+        // 下面是方法二 
 
-        // str += ',' + arr[i];
-        // 就是str=str+","+arr[i];
+        let arr = ['a', 'b', 'c', 'd'];
+        console.log(arr.join(','));
+
+
+
+        // str += ',' + arr[i],就是str=str+","+arr[i];
 
 
     </script>
