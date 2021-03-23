@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>practice</title>
+    <script>
+        //用 for 迴圈實現物件的複製
+        let obj01 = { name: "Bill", age: 25 };
+        let obj02 = {};
+
+        for (let key in obj01) {
+            obj02[key] = obj01[key];
+        }
+
+        console.log(obj01);
+        console.log(obj02);
+
+
+
+        // 下面應該只是要示範jason字串跟物件互轉的效果 qq
+        //轉成 json 後，再轉成 object，來實現物件的複製
+        let obj03 = { name: "Alex", age: 18 };
+        let strJson = JSON.stringify(obj03);
+        let obj04 = JSON.parse(strJson);
+        console.log(obj03);
+        console.log(obj04);
+        delete obj04.name;
+        console.log(obj04);
+
+
+
+        // 與上面的流程等同於   不同寫法而已
+        obj03 = { name: "Alex", age: 18 };
+        obj04 = JSON.parse(JSON.stringify(obj03));
+        console.log(obj03);
+        console.log(obj04);
+
+
+        //用 ... 實現物件的複製
+        let obj05 = { name: "Cook", age: 22 };
+        let { ...obj06 } = obj05;
+        console.log(obj05);
+        console.log(obj06);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
