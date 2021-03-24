@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practice</title>
+    <script>
+
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <button id="btn" style="width: 100px; height: 50px;">連點兩下: 0</button>
+
+    <script>
+        let count = 0;
+        let width = 100;
+        let height = 50;
+
+        document.getElementById('btn').addEventListener('dblclick', function (event) {
+            count += 1;
+            width += 20;
+            height += 20;
+            this.innerText = "連點兩下" + count;
+            this.style.width = width + "px";
+            this.style.height = height + "px";
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

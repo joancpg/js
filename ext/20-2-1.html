@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practice</title>
+    <script>
+
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="myNewDiv",class="box">Hello world!</div> -->
+
+
+    <script>
+
+
+        var newDiv = document.createElement('div');
+
+        //指定屬性
+        newDiv.id = "myNewDiv";
+        newDiv.className = "box";
+
+        //建立 textNode 文字節點
+        var textNode = document.createTextNode("Hello world!");
+
+        //透過 newDiv.appendChild 將 textNode 加入至 newDiv
+        newDiv.appendChild(textNode);
+
+        //透過 document.body.appendChild 來加入 newDiv 到網頁當中
+        document.body.appendChild(newDiv);
+
+        var newDiv = document.createElement('div');
+        newDiv.id = "myNew"
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
