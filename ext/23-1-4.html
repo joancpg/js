@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practice</title>
+    <script>
+
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="200" height="200"></canvas>
+
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+
+
+
+
+        /**
+        * 在座標 (10, 10) 繪製一個 10 畫素 x 10 畫素的矩形。
+        * void ctx.fillRect(x, y, width, height); 
+        */
+        ctx.fillStyle = "Red";
+        ctx.fillRect(10, 10, 100, 100);
+
+
+
+        /**
+        * 繪製矩形邊框。在畫布左上角 (10,10) 個畫素的位置，
+        * 畫了一個寬 100 畫素、高 20 畫素的矩形。
+        * void ctx.strokeRect(x, y, width, height);
+        */
+        ctx.strokeRect(10, 10, 100, 20);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

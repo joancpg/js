@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practice</title>
+    <script>
+
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <ul id="myList">
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+    </ul>
+
+    <script>
+
+
+        var myList = document.getElementById('myList');
+
+        var oldNode = document.querySelectorAll('li')[1];
+        var newNode = document.createElement('li')
+        var textNode = document.createTextNode('Hello World');
+        newNode.appendChild(textNode);
+
+
+        //  將原有的 oldNode 替換成新節點 newNode  replaceChild(取代後的li, 取代前的li);
+
+        myList.replaceChild(newNode, oldNode);
+
+
+        // 用.replaceChild 取代特定li
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

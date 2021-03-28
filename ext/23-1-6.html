@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practice</title>
+    <script>
+
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="200" height="200"></canvas>
+
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        //更改邊框顏色
+        ctx.strokeStyle = '#7878ff';
+
+        //更改線條粗細
+        ctx.lineWidth = 4;
+
+
+        ctx.beginPath();
+        ctx.moveTo(10, 10);
+        ctx.lineTo(60, 60);
+
+        ctx.moveTo(60, 10);
+        ctx.lineTo(10, 60);
+
+
+        ctx.moveTo(10, 10);
+        ctx.lineTo(60, 10);
+
+
+
+        ctx.stroke();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

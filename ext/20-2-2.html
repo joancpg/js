@@ -25,15 +25,12 @@
         var myList = document.getElementById('myList');
 
 
-
         // 建立新的 <li> 元素
         var newList = document.createElement('li');
 
 
-
         // 建立 textNode 文字節點
         var textNode = document.createTextNode('Hello World');
-
 
 
         // 透過 appendChild 將 textNode 加入至 newList
@@ -41,6 +38,23 @@
 
         // 透過 appendChild 將 newList 加入至 myList
         myList.appendChild(newList);
+
+
+
+
+
+
+
+        // 再新增一個li跟文字
+        var newLi = document.createElement('li');
+        var textmo = document.createTextNode("HEY FU");
+        newLi.appendChild(textmo);
+        myList.appendChild(newLi);
+
+
+
+
+
 
 
 

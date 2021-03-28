@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practice</title>
+    <script>
+
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <ul id="myList">
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+    </ul>
+
+    <script>
+
+        // 取得容器
+        var myList = document.getElementById('myList');
+
+        // 取得 "<li>Item 02</li>" 的元素
+        var refNode = document.querySelectorAll('li')[1];
+
+        // 建立 li 元素節點
+        var newNode = document.createElement('li');
+
+        // 建立 textNode 文字節點
+        var textNode = document.createTextNode("Hello world!");
+        newNode.appendChild(textNode);
+
+        // 將新節點 newNode 插入 refNode 的前方(新增的li,在哪一個li的前面)
+        myList.insertBefore(newNode, refNode);
+
+
+
+
+        // 用insertBefore  指定新增的虛擰li 放於特定位置
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

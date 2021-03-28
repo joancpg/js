@@ -25,20 +25,13 @@
         ]
     }`;
 
-        // json 轉 object 的操作，同時存取物件屬性
-
         //將jASON 字串 轉成物件 (非常重要)
         let obj = JSON.parse(str);
 
-
-        //讀取 obj 物件屬性 firstName
         console.log(obj['firstName']);
-
-        //讀取 obj 物件屬性 address 裡面的物件屬性 streetAddress
         console.log(obj['address']['city']);
 
 
-        //將 obj 物件屬性 phoneNumber 當中的陣列資料（裡面是物件）逐一列出
         for (let qq of obj['phoneNumber']) {
             console.log('===========');
             console.log(qq['type']);

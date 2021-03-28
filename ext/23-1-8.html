@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practice</title>
+    <script>
+
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="200" height="200"></canvas>
+
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = 'SkyBlue';
+
+        /**
+         * 繪製弧線
+         * void ctx.arc(x, y, radius, startAngle, endAngle [, anticlockwise]);
+         */
+
+        ctx.beginPath();
+        ctx.arc(50, 50, 20, 0, Math.PI / 2, false);
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(100, 50, 20, 0, Math.PI, false);
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(150, 50, 20, 0, Math.PI * 2, false);
+        ctx.stroke();
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

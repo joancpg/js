@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practice</title>
+    <script>
+
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <p style="color: #7878ff; line-height: 3; font-size: 30px;">Hello World<br />Good job!</p>
+
+    <script>
+        let p = document.getElementsByTagName('p')[0];
+
+        // 先在網頁把預設印出來
+        //取得 p 元素，並取得 style 屬性中的 css 屬性值
+        document.write('<br/>');
+        document.write(p.style.color + '<br/>');
+        document.write(p.style.lineHeight + '<br/>');
+        document.write(p.style.fontSize + '<br/>');
+
+
+
+        // 用js改變預設 (有各種不同格式表示方式)
+        p.style.color = '#ff0000';
+        // 
+        p.style['font-size'] = '80px';
+        //用 css 格式改變
+        p.style['backgroundColor'] = '#CFEE99';
+        //屬性也可以用 javascript 格式改變
+
+
+        p.style.fontSize = "2px";
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
